@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript Event</title>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        
+        <section id="EventContainer">
+            <h2 class="heading">Javascript DOM Event</h2>
+            
+            <div class="event">
+                <!-- Method-1: -->
+                <div class="item">
+                    <h2>Method-1: Oneclick Function</h2>
+                    <button class="btn" onclick="console.log(65)" > onclick </button>
+                    <!-- -------------------------------------------------------- -->
+                    <button class="btn" onclick="document.body.style.backgroundColor='black' " >Change Bg Color</button>
+
+                </div>
+
+
+                <!-- Method-2: -->
+                <div class="item">
+                    <h2>Method-2:Use Oneclick by Function</h2>
+                    <button class="btn" onclick="makeRed()" >Make Red</button>
+                    
+                </div>
+
+                <!-- Method-3: -->
+                <div class="item">
+                    <h2>Method-3:Use Function</h2>
+                    <button  class="btn" id="make-blue" >Make Blue</button>
+                    <!-- Method-3.1: -->
+                    <button class="btn" id="make-purple">Make Purple</button>
+                </div>
+
+
+                <!-- Method-4: using Add Event Listener -->
+                <div class="item">
+                    <h2>Method-4:using Add Event Listener</h2>
+                    <button class="btn" id="make-pink">Make Pink</button>
+
+                    <!-- Method-4.1: -->
+                    <button class="btn" id="make-green">Make Green</button>
+                    <!-- Method-4.2: Regular use -->
+                    <button class="btn" id="make-golden">Make Golden</button>
+                </div>
+                
+        </section>
+        <hr>
+
+
+        <!-- ===================================
+        Most Common Ways to set event handeler--
+        ===================================== -->
+
+        <section id="eventHandler">
+            
+            <h2 class="heading">Most Common Ways to set event handeler</h2>
+            <hr>
+            
+            <div class="eventHandler">
+                
+                <!-- Change Text by Function -->
+                <div class="item">
+                    <h3 id="defaultText">Change text using button Click</h3>
+                    <button class="btn" onclick="changeText()">Click and Change Text</button>
+                </div>
+
+                <!-- Change Text by Add EventListener -->
+                <div class="item">
+                    <h3 id="default">Change Text by Add EventListener</h3>
+                    <button class="btn" id="event-listener" >Click to Change by Add EventListener</button>
+                </div>
+
+                
+                <!-- ===================================================
+                            Update Text From Input Field
+                =================================================== -->
+                <div class="item">
+                    <h2 align="center">Update Text From Input Field</h2>
+                    
+
+                    <!-- Update Text -->
+                    <p id="display-inputText">Default text</p>
+                    <input id="input-field" type="text">
+                    <button class="btn" id="btn-update" >Update Text</button>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <!-- ===================================
+        Create A Comment Box And Display Comment--
+        ===================================== -->
+
+        <section>
+            <h2 class="heading">All Comments</h2>
+
+            <div id="Container">
+                <div class="item">
+
+                    <div  id="comment-container">
+                        <p>This is First Comment</p>
+                    </div>
+                    
+                   <div>
+                        <textarea name="" id="textArea" cols="36" rows="5" placeholder="Write a Comment"></textarea>
+                        <button class="btn" id="btn-comment">Comment Post</button>
+                   </div>
+                </div>
+
+                <!-- ===================================
+                        Delete Confirmation Button
+                ===================================== -->
+                <div class="item">
+                    <h3>My secret Information</h3>
+                    <input type="text" id="delete-confirm" placeholder="Type Delete">
+                    <button  id="btn-delete" disabled>Delete</button>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- ===================================
+            Event Delegate and Event Bubble
+        ===================================== -->
+        <section id="delegate">
+            <h2 class="heading">Explore Event Delegate</h2>
+            <div class="eventDelegate">
+                <ol id="list-container">
+                    <li class="item">Lorem ipsum </li>
+                    <li class="item">Lorem ipsum dolor </li>
+                    <li class="item">Lorem ipsum dolor sit !</li>
+                </ol>
+                <button class="btn" id="btn-add-item">Add Item</button>
+            </div>
+            
+        </section>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
